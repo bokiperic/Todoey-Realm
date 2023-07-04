@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5D859C4B2A54A6620010E97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D859C4A2A54A6620010E97D /* AppDelegate.swift */; };
-		5D859C4D2A54A6620010E97D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D859C4C2A54A6620010E97D /* SceneDelegate.swift */; };
-		5D859C4F2A54A6620010E97D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D859C4E2A54A6620010E97D /* ViewController.swift */; };
 		5D859C522A54A6620010E97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D859C502A54A6620010E97D /* Main.storyboard */; };
 		5D859C542A54A6650010E97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D859C532A54A6650010E97D /* Assets.xcassets */; };
-		5D859C572A54A6650010E97D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D859C552A54A6650010E97D /* LaunchScreen.storyboard */; };
+		5D859C632A54A76A0010E97D /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5D859C622A54A76A0010E97D /* Base.lproj */; };
+		5D859C662A54A8A70010E97D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D859C642A54A8A60010E97D /* CategoryViewController.swift */; };
+		5D859C672A54A8A70010E97D /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D859C652A54A8A60010E97D /* TodoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D859C472A54A6620010E97D /* Todoey-Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todoey-Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D859C4A2A54A6620010E97D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D859C4C2A54A6620010E97D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D859C4E2A54A6620010E97D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D859C512A54A6620010E97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D859C532A54A6650010E97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D859C562A54A6650010E97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D859C582A54A6650010E97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D859C622A54A76A0010E97D /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		5D859C642A54A8A60010E97D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5D859C652A54A8A60010E97D /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				5D859C4A2A54A6620010E97D /* AppDelegate.swift */,
-				5D859C4C2A54A6620010E97D /* SceneDelegate.swift */,
-				5D859C4E2A54A6620010E97D /* ViewController.swift */,
-				5D859C502A54A6620010E97D /* Main.storyboard */,
-				5D859C532A54A6650010E97D /* Assets.xcassets */,
-				5D859C552A54A6650010E97D /* LaunchScreen.storyboard */,
+				5D859C5F2A54A6FE0010E97D /* Data Model */,
+				5D859C602A54A7110010E97D /* Views */,
+				5D859C5E2A54A6F10010E97D /* Controllers */,
+				5D859C612A54A71A0010E97D /* Supporting Files */,
 				5D859C582A54A6650010E97D /* Info.plist */,
 			);
 			path = "Todoey-Realm";
+			sourceTree = "<group>";
+		};
+		5D859C5E2A54A6F10010E97D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D859C642A54A8A60010E97D /* CategoryViewController.swift */,
+				5D859C652A54A8A60010E97D /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D859C5F2A54A6FE0010E97D /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		5D859C602A54A7110010E97D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D859C502A54A6620010E97D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D859C612A54A71A0010E97D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D859C622A54A76A0010E97D /* Base.lproj */,
+				5D859C532A54A6650010E97D /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D859C572A54A6650010E97D /* LaunchScreen.storyboard in Resources */,
 				5D859C542A54A6650010E97D /* Assets.xcassets in Resources */,
+				5D859C632A54A76A0010E97D /* Base.lproj in Resources */,
 				5D859C522A54A6620010E97D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D859C4F2A54A6620010E97D /* ViewController.swift in Sources */,
+				5D859C672A54A8A70010E97D /* TodoListViewController.swift in Sources */,
+				5D859C662A54A8A70010E97D /* CategoryViewController.swift in Sources */,
 				5D859C4B2A54A6620010E97D /* AppDelegate.swift in Sources */,
-				5D859C4D2A54A6620010E97D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +185,6 @@
 				5D859C512A54A6620010E97D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5D859C552A54A6650010E97D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D859C562A54A6650010E97D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,8 +317,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +327,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.bokiperic.Todoey-Realm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +349,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.bokiperic.Todoey-Realm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
