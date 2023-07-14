@@ -41,12 +41,14 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" customizationIdentifier="" id="EDN-N1-9Y2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qmd-ux-4tJ">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="ThM-3i-TGE" id="27k-Tu-Bwc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="c7e-WY-eLY" id="rda-6n-5Om"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fp3-Mz-2LO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,8 +59,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fTP-Hk-RvY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4oP-ah-y75">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="4oP-ah-y75">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <textAttributes key="titleTextAttributes">
@@ -102,7 +104,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Todoey" id="CKP-oj-PwF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sOR-V8-34t">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="gaH-nh-9cp" id="MQZ-kr-ueH"/>
                             </connections>
